@@ -1,0 +1,161 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Estilização do corpo */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Limitação de largura e centralização */
+header, main, footer {
+    max-width: 1005px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza na página */
+    padding: 0; /* Espaçamento interno nas laterais */
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    padding-top: 65px; /* Espaçamento no topo */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    
+}
+
+.logo span {
+    color: #76c7c0;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #333;
+}
+
+/* Layout principal (duas colunas) */
+main {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    gap: 50px; /* Espaço entre as colunas */
+    padding: 50px 0; /* Espaçamento interno */
+    max-width: 1005px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza na página */
+    padding-left: 0; /* Espaçamento interno à esquerda */
+    padding-right: 0; /* Espaçamento interno à direita */
+}
+
+/* Estilização do conteúdo textual */
+.content {
+    flex: 1; /* Ocupa metade do espaço */
+    max-width: 50%; /* Limita a largura do conteúdo */
+    order: 1; /* Define a ordem do conteúdo (esquerda) */
+}
+
+/* Estilização da imagem */
+.image {
+    flex: 1; /* Ocupa metade do espaço */
+    display: flex;
+    justify-content: flex-end; /* Alinha a imagem à direita */
+    order: 2; /* Define a ordem da imagem (direita) */
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px; /* Mantém a imagem responsiva */
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #000;
+}
+
+.highlight {
+    color: #76c7c0;
+    font-weight: bold;
+}
+
+p {
+    color: #666;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Botão de ação */
+.btn {
+    background-color: #6ec6a8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 179px; /* Largura fixa */
+    height: 56px; /* Altura fixa */
+    text-align: left; /* Alinha o texto à esquerda */
+    text-decoration: none; /* Remove a linha embaixo do texto */
+}
+
+.btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilização da imagem */
+.image {
+    flex: 1; /* Ocupa metade do espaço */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem */
+}
+
+.image img {
+    width: 100%;
+    max-width: 481px; /* Mantém a imagem responsiva */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0; /* Espaçamento interno */
+    font-size: 14px;
+    color: #333;
+    margin-top: 90px; /* Espaçamento externo */
+   
+}
+
+footer span {
+    font-weight: bold;
+}
